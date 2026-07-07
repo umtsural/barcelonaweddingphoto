@@ -203,15 +203,25 @@ img{
   inset:0;
   z-index:2147483000;
   pointer-events:none;
+  overflow:hidden;
 }
 
 .bwp-page-wipe:after{
   content:"";
   position:absolute;
-  inset:0;
-  background:rgba(250,248,243,.24);
+  inset:-28px;
+  background-image:url("../images/hero/hero-main.jpg");
+  background-image:image-set(
+    url("../images/hero/hero-main-1365w.avif") type("image/avif"),
+    url("../images/hero/hero-main-1365w.webp") type("image/webp"),
+    url("../images/hero/hero-main.jpg") type("image/jpeg")
+  );
+  background-position:center;
+  background-size:cover;
+  filter:blur(14px);
   opacity:0;
-  transform:translateX(-100%);
+  transform:scale(1.08);
+  transform-origin:center;
 }
 
 .bwp-page-wipe.is-active:after{
@@ -219,10 +229,9 @@ img{
 }
 
 @keyframes bwpPageWipe{
-  0%{opacity:0;transform:translateX(-100%);}
-  25%{opacity:1;}
-  75%{opacity:1;transform:translateX(0);}
-  100%{opacity:0;transform:translateX(0);}
+  0%{opacity:0;transform:scale(1.1);}
+  24%{opacity:1;}
+  100%{opacity:1;transform:scale(1.05);}
 }
 
 /* Homepage hero */
