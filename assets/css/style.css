@@ -401,7 +401,11 @@ img{
 }
 
 .editorial-side-img.right{
-  content:url("../images/final/green-section-table-vertical.jpg");
+  content:image-set(
+    url("../images/final/green-section-table-vertical-1023w.avif") type("image/avif"),
+    url("../images/final/green-section-table-vertical-1023w.webp") type("image/webp"),
+    url("../images/final/green-section-table-vertical.jpg") type("image/jpeg")
+  );
   filter:none;
   opacity:.92;
   max-width:380px;
@@ -828,9 +832,9 @@ img{
   height:470px;
 }
 
-.j1{background-image:url("../images/journal/journal-01.jpg");}
-.j2{background-image:url("../images/journal/journal-02.jpg");}
-.j3{background-image:url("../images/journal/journal-03.jpg");}
+.j1{background-image:image-set(url("../images/journal/journal-01.avif") type("image/avif"),url("../images/journal/journal-01.webp") type("image/webp"),url("../images/journal/journal-01.jpg") type("image/jpeg"));}
+.j2{background-image:image-set(url("../images/journal/journal-02.avif") type("image/avif"),url("../images/journal/journal-02.webp") type("image/webp"),url("../images/journal/journal-02.jpg") type("image/jpeg"));}
+.j3{background-image:image-set(url("../images/journal/journal-03.avif") type("image/avif"),url("../images/journal/journal-03.webp") type("image/webp"),url("../images/journal/journal-03.jpg") type("image/jpeg"));}
 
 .article h3{
   font-family:var(--serif);
@@ -1074,7 +1078,11 @@ img{
 .journal-banner{
   margin-top:86px;
   min-height:64vh;
-  background:url("../images/final/journal-hero-wedding-table.jpg") center/cover;
+  background:image-set(
+    url("../images/final/journal-hero-wedding-table.avif") type("image/avif"),
+    url("../images/final/journal-hero-wedding-table.webp") type("image/webp"),
+    url("../images/final/journal-hero-wedding-table.jpg") type("image/jpeg")
+  ) center/cover;
   color:white;
   display:flex;
   align-items:center;
@@ -1402,7 +1410,11 @@ img{
 }
 
 .about-mini-detail .editorial-small{
-  background-image:url("../images/polish/about-small-color.jpg");
+  background-image:image-set(
+    url("../images/polish/about-small-color.avif") type("image/avif"),
+    url("../images/polish/about-small-color.webp") type("image/webp"),
+    url("../images/polish/about-small-color.jpg") type("image/jpeg")
+  );
 }
 
 .about-essay{
@@ -1413,7 +1425,11 @@ img{
 
 .about-photo{
   min-height:720px;
-  background:url("../images/about/about-01.jpg") center/cover;
+  background:image-set(
+    url("../images/about/about-01.avif") type("image/avif"),
+    url("../images/about/about-01.webp") type("image/webp"),
+    url("../images/about/about-01.jpg") type("image/jpeg")
+  ) center/cover;
 }
 
 .about-copy{
@@ -1477,7 +1493,11 @@ img{
   margin-top:38px;
   width:138px;
   height:188px;
-  background:url("../images/contact/contact-01.jpg") center/cover;
+  background:image-set(
+    url("../images/contact/contact-01.avif") type("image/avif"),
+    url("../images/contact/contact-01.webp") type("image/webp"),
+    url("../images/contact/contact-01.jpg") type("image/jpeg")
+  ) center/cover;
   filter:grayscale(1);
 }
 
